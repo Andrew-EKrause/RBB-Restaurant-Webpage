@@ -1,5 +1,5 @@
 # *Riverside Burger Bash Restaurant Webpage*
-## **[View the Riverside Burger Bash Project Here](https://andrew-ekrause.github.io/HabitHelper-Promotional-Webpage/)**
+## **[View the Riverside Burger Bash Project Here](https://andrew-ekrause.github.io/RBB-Restaurant-Webpage/)**
 
 <p>&nbsp;</p>
 
@@ -13,15 +13,13 @@ The application being promoted by this webpage does not exist. The webpage desig
 **Resources for Project:**
 - HTML
 - CSS
-- Bootstrap: https://getbootstrap.com/
+- JavaScript
 - Udemy: https://www.udemy.com/
 - MDN Web Docs: https://developer.mozilla.org/en-US/
 - Google Fonts: https://fonts.google.com/
 - Font Awesome: https://fontawesome.com/
-- flaticon: https://www.flaticon.com/
-- Giphy: https://giphy.com/
-- SneakPeakIt: https://sneakpeekit.com/
-- Submarine Cable Map: https://www.submarinecablemap.com/
+- W3Schools: https://www.w3schools.com/
+- Stack Overflow: https://stackoverflow.com/
 <p>&nbsp;</p>
 
 **_@Author: Andrew Krause_** <br/>
