@@ -22,6 +22,11 @@ The application being promoted by this webpage does not exist. The webpage desig
 - Stack Overflow: https://stackoverflow.com/
 <p>&nbsp;</p>
 
+## **NOTE:**
+
+The images used in this project were not created or taken by me. I created the webpage as part of an assignment for my web design class at the University of Wisconsin - La Crosse. Therefore, I used images I found online for the Riverside Burger Bash webpage within an academic context. I have cited the image sources that I used. The image attributions are included in a separate document within this repository labled: "RBB-Image-Attributions". YOU STILL NEED TO ADD THIS DOCUMENT!!!!!!
+<p>&nbsp;</p>
+
 **_@Author: Andrew Krause_** <br/>
 *LinkedIn:* https://www.linkedin.com/in/andrew-krause-b6aa21179/ <br/>
 *Portfolio:* https://andrewkrause.dev/ <br/>
