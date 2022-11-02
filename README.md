@@ -4,7 +4,7 @@
 <p>&nbsp;</p>
 
 ###### Home Page of Riverside Burger Bash
-<img width="1680" alt="rbb-home" src="https://user-images.githubusercontent.com/57727121/199404993-a7593b71-c33f-4852-a720-6406bb5822f2.png">
+<img width="1680" alt="Screen Shot 2022-11-02 at 2 04 44 AM" src="https://user-images.githubusercontent.com/57727121/199422373-ed5d45af-1a97-482f-8755-078cb1c773f1.png">
 
 ## Description
 **_Restaurant Webpage that Uses Responsive Interface Design_** <br/>
