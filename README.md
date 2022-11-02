@@ -14,7 +14,6 @@ The application being promoted by this webpage does not exist. The webpage desig
 - HTML
 - CSS
 - JavaScript
-- Udemy: https://www.udemy.com/
 - MDN Web Docs: https://developer.mozilla.org/en-US/
 - Google Fonts: https://fonts.google.com/
 - Font Awesome: https://fontawesome.com/
