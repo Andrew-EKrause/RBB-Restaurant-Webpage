@@ -7,8 +7,8 @@
 <img width="1680" alt="rbb-home" src="https://user-images.githubusercontent.com/57727121/199404993-a7593b71-c33f-4852-a720-6406bb5822f2.png">
 
 ## Description
-**_Restaurant Webpage that Implements Responsive Interface Design_** <br/>
-The application being promoted by this webpage does not exist. The webpage designed in this project promotes a hypothetical application called 'HabitHelper'. The webpage was designed for the sole purpose of exploring clean design techniques as well as making a site responsive to the display environment. A major component of the page was incorporating the Bootstrap library framework to help with styling. Key features of the webpage include its responsiveness to changing screen sizes as well as different device views such as an iPhone or iPad. Bootstrap, which serves as a framework for CSS in styling websites, made the responsiveness feature of the webpage possible. Other aspects of Bootstrap, such as the Bootstrap Carousel and Bootstrap Navbar, were built into the structure of the webpage. Future updates to the webpage may involve including additonal pages as well as developing an actual app that the site can promote.
+**_Restaurant Webpage that Uses Responsive Interface Design_** <br/>
+The webpage designed in this project is for a fake restaurant called 'Riverside Burger Bash'. The webpage was created as a project in my Intro to Web Design class (CS 202) at the University of Wisconsin - La Crosse. In the process of designing the Riverside Burger Bash website, I followed a project prompt that was provided by the instructor of the web design course. Basic knowledge of HTML, CSS, and JavaScript was used in the process of planning the structure of the webpage. Useful features of web design such as the flexbox were included as part of the CSS code to help with the layout of different elements on the site. An important part of the project was incorporating responsive web design principles. Besides the table representing a bill with an order on the website, the project is responsive and can be viewed on devices such as mobile phones. A potential future update may include the use of JavaScript or a database to populate the data for the menu items of the website as opposed to static data in the html. 
 
 **Resources for Project:**
 - HTML
@@ -23,7 +23,7 @@ The application being promoted by this webpage does not exist. The webpage desig
 
 ## **NOTE:**
 
-The images used in this project were not created or taken by me. I created the webpage as part of an assignment for my web design class at the University of Wisconsin - La Crosse. Therefore, I used images I found online for the Riverside Burger Bash webpage within an academic context. I have cited the image sources that I used. The image attributions are included in a separate document within this repository labled: "RBB-Image-Attributions". YOU STILL NEED TO ADD THIS DOCUMENT!!!!!!
+The images used in this project were not created or taken by me. I created the webpage as part of an assignment for my web design class at the [University of Wisconsin - La Crosse](https://www.uwlax.edu/). Therefore, I used images I found online for the Riverside Burger Bash webpage within an academic context. I have cited the image sources that I used. The image attributions are included in a separate document within this repository labled: "RBB-Image-Attributions". YOU STILL NEED TO ADD THIS DOCUMENT!!!!!!
 <p>&nbsp;</p>
 
 **_@Author: Andrew Krause_** <br/>
