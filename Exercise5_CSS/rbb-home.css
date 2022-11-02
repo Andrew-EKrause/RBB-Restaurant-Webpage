@@ -1,0 +1,104 @@
+/**
+ * The CSS in this file provides styles for the
+ * home page of the Riverside Burger Bash website.
+ * The file styles the home page of the website
+ * for most device sizes. The sizing sections,
+ * created through media queries in CSS, include: 
+ * Mobile View, Larger View, Desktop View, the 
+ * Maximum View, and Beyond Maximum View. The 
+ * file helps ensure that clean, simple styles 
+ * are applied to this part of the website on 
+ * most device sizes.
+ *
+ * Project: Riverside Burger Bash
+ * Author: Andrew Krause
+ * Class: CS 202
+ * Date: 10/14/2022
+ *
+ */
+
+/* ====================================================================
+                    HOME.EJS STYLES (all-sizes)
+==================================================================== */
+
+#home {
+    height: 100%;
+    padding-top: 0px;
+}
+
+.home-part .home-background {
+    padding-top: 0px;
+    background-image: url('../Exercise5_Images/home-images/home.png');
+    filter: brightness(40%);
+    height: 400px;
+}
+
+.home-part {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home-background {
+    position: relative;
+    inset: 0 0 0 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    display: block;
+}
+
+.home-text-container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-text-group {
+    margin: 40px 30px 30px 30px;
+    padding: 30px;
+    color: var(--white);
+    background-color: var(--p1-burger-darkgray);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(119, 119, 119);
+}
+
+.home-text {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.home-text-last {
+    margin-bottom: 0px;
+}
+
+/* ====================================================================
+            HOME.EJS STYLES (mobile, larger, desktop, maximum)
+==================================================================== */
+
+/* Smaller View (like iPhone) */
+@media (max-width: 750px) {
+
+    #home {
+        height: 100%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .home-text-group {
+        padding: 20px;
+    }
+
+    .home-text {
+        font-size: 22px;
+    }
+}
+
+/* Larger View (like iPad) */
+@media (min-width: 650px) {
+
+    #home {
+        height: 100%;
+        padding-top: 169.5px;
+        padding-bottom: 20px;
+    }
+}

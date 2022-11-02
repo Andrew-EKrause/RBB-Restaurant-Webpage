@@ -1,0 +1,122 @@
+<!--
+    The HTML structure builds out the home page
+    of the Riverside Burger Bash website. On the  
+    home page, different sections are listed out
+    to display different components of the website.
+    A main picture is displayed on the top of the
+    Riverside Burger Bash restaurant page. A very 
+    brief description about the restaurant is also 
+    provided below the picture. 
+    ...
+    Page: HOME
+    ...
+    Project: Riverside Burger Bash
+    Author: Andrew Krause
+    Class: CS 202
+    Date: 10/14/2022
+    ...
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title of website -->
+        <title>Riverside Burger Bash</title>
+
+        <!-- Meta Data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS Speadsheet and Icon for Tab Display -->
+        <link href="Exercise5_CSS/rbb-universal.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-header.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-footer.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-home.css" rel="stylesheet">
+        <link rel="shortcut icon" href="Exercise5_Images/home-images/burger-solid.svg" type="image/x-icon">
+
+        <!-- Script Links for JavaScript and Fontawesome -->
+        <script type="text/javascript" src="Exercise5_JS/rbb-functions.js" defer></script> <!-- async defer -->
+        <script src="https://kit.fontawesome.com/55b918ce29.js" crossorigin="anonymous"></script> 
+
+        <!-- Sans Serif Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Cardo&family=Josefin+Slab&family=Libre+Franklin:wght@200&family=Lora:wght@400;500&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=Raleway:wght@300&family=Rokkitt:wght@300&family=Rubik:wght@300&family=Source+Sans+Pro&family=Unna&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header with responsive navbar -->
+        <header id="navbar">
+            <nav class="burgerbash-nav">
+                <h1 class="home-heading-styles">Riverside Burger Bash</h1> 
+                <div class="navbar-container">
+                    <p class="home-logo">
+                        <i class="fa-solid fa-burger"></i>
+                    </p>
+                    <ul class="menu">
+                        <li class="menu-item-container menu-first-item-container">
+                            <a id="menu-burgers" class="menu-link first-menu-link" href="rbb-burgers.html">Burgers</a>
+                        </li>
+                        <li class="menu-item-container">
+                            <a id="menu-appetizers" class="menu-link" href="rbb-appetizers.html">Appetizers</a>
+                        </li>
+                        <li class="menu-item-container">
+                            <a id="menu-beverages" class="menu-link" href="rbb-beverages.html">Beverages</a>
+                        </li>
+                        <li class="menu-item-container">
+                            <a id="menu-bill" class="menu-link" href="rbb-bill.html">Sample Bill</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main content of home page -->
+        <article id="home">
+            <section class="home-part">
+                <div class="home-background"></div>
+                <div class="home-text-container">
+                    <div class="home-text-group">
+                        <p class="home-text">
+                            Welcome to Riverside Burger Bash! Located alongside the Mississippi River in downtown La Crosse, Wisconsin,
+                            the restaurant is a great place for a family outing. We are famous for our burgers. Our options include
+                            the Bacon Bomb, the Bash Deluxe, and the River Raft burgers. 
+                        </p>
+                        <p class="home-text home-text-last">
+                            Other meal options include our chicken sandwhiches and salads. In addition to burgers, we serve a variety of
+                            beverages and appetizers. Some of our appetizers include french fries, jalapeno poppers, and Wisconsin cheese 
+                            curds. We serve many different drinks including margaritas, soda, and our classic mint milkshakes. Explore 
+                            our menu by selecting from the items listed at the top of the page! 
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer with name and dynamic year -->
+        <footer id="footer" class="footer-section" data-visible="true">
+            <div class="footer-row">
+                <div>
+                    <p class="footer-hours">
+                        <i class="fa-solid fa-clock"></i> Open Mon - Fri from 10:00AM to 11:00PM
+                    </p>
+                    <p class="footer-hours">
+                        <i class="fa-solid fa-glasses"></i> Copyright © Andrew Krause <script>document.write(new Date().getFullYear())</script>
+                    </p>
+                </div>
+                <address class="address-info">
+                    <p class="footer-address-location">
+                        <i class="fa-solid fa-location-dot"></i> 100 Harborview Plaza #100, La Crosse, WI 54601
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> (608) 782-8213
+                    </p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>

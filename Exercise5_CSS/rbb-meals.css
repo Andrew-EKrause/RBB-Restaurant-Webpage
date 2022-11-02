@@ -1,0 +1,484 @@
+/**
+ * The CSS in this file provides styles for all of
+ * the meals pages that are part of the Riverside Burger
+ * Bash website. The file styles the header section
+ * for a given meals page of the website. The file
+ * also includes styles for the main content on each
+ * meals page of the website, which includes a series
+ * of cards displaying items in each given menu category.
+ * Styles are included for the majority of device sizes. 
+ * The sizing sections, created through media queries
+ * in CSS, include: Less Than Mobile View, Mobile 
+ * View, Larger View, Desktop View, Maximum View, 
+ * and Beyond Maximum View. The file helps ensure
+ * that clean, simple styles are applied to this
+ * part of the website on most device sizes.
+ *
+ * Project: Riverside Burger Bash
+ * Author: Andrew Krause
+ * Class: CS 202
+ * Date: 10/14/2022
+ *
+ */
+
+/* ====================================================================
+                    MEAL HEADER.EJS STYLES (all-sizes)
+==================================================================== */
+
+.meals-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--p1-burger-yellow);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+.back-home-button {
+    font-size: 22px !important;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--p1-burger-darkgray);
+    color: var(--white);
+    list-style: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.5s ease;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-self: start;
+}
+
+.back-home-button:hover {
+    background-color: var(--p1-burger-white);
+    border: 2px solid var(--p1-burger-darkgray);
+    color: var(--black);
+}
+
+a .fa-burger {
+    margin-top: 5px;
+    font-size: 30px;
+    color: var(--p1-burger-white);
+    transition: 0.5s ease;
+}
+
+.back-home-button:hover .fa-burger {
+    color: var(--black);
+}
+
+.meal-heading-styles {
+    background-color: var(--p1-burger-yellow);
+    font-size: 70px !important;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    line-height: 1em;
+    margin-bottom: 0px;
+    align-self: center;
+}
+
+.meal-navbar-container {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.meal-menu {
+    background-color: var(--p1-burger-darkgray);
+    border: solid 3px var(--p1-burger-darkgray);
+    color: var(--white);
+    list-style: none;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.meal-first-menu-link {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.meal-third-menu-link {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.meal-menu-link {
+    text-align: center;
+    font-size: 23px !important;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--p1-burger-darkgray);
+    color: var(--white);
+    position: relative;
+    list-style: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    transition: 0.5s ease;
+}
+
+/* .meal-menu-link:hover {
+    background-color: var(--p1-burger-white);
+    color: var(--black);
+} */
+
+.menu-is-active {
+    background-color: var(--p1-burger-white);
+    color: var(--black);
+}
+
+/* ====================================================================
+                    MEAL HEADER.EJS STYLES (mobile)
+==================================================================== */
+
+@media (max-width: 750px) {
+
+    .meals-nav {
+        flex-direction: column-reverse;
+    }
+
+    .back-home-button {
+        text-align: center;
+        position: relative;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        border-radius: 0px;
+        align-self: center;
+        width: 100%;
+        border-bottom: 1px solid var(--p1-burger-tan);
+    }
+
+    a .fa-burger {
+        margin-top: 5px;
+    }
+
+    .meal-heading-styles {
+        font-size: 50px !important;
+        padding-bottom: 0px;
+    }
+}
+
+/* ====================================================================
+                        MEAL.EJS STYLES (all-sizes)
+==================================================================== */
+
+#meals-list {
+    height: 100%;
+    padding-top: 0px;
+}
+
+.meal-container {
+    max-width: 1080px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meal-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.meal-card {
+    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    flex: 50%;
+    background-color: var(--p1-burger-white);
+    border: solid 3px var(--p1-burger-darkgray);
+    border-radius: 5px;
+    height: 351px; 
+    transition: all .2s ease-in-out;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgb(119, 119, 119);
+}
+
+/* Create a counter for the index portion. */
+.meal-index-container {
+    color: var(--white);
+    background-color: var(--p1-burger-darkgray);
+    padding: 10px;
+}
+
+section {
+    counter-reset: mealcounter;
+}
+
+.meal-index::before {
+    counter-increment: mealcounter;
+    content: counter(mealcounter) ".";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* << Styling for each picture in each menu item is below. >> */
+
+/* Style the name and price information for each meal item. */
+.meal-nameprice-container {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--p1-burger-darkgray);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ====================================================================
+            MEAL.EJS STYLES (mobile, larger, desktop, maximum)
+==================================================================== */
+
+/* Larger View (like iPad) */
+@media (max-width: 1080px) {
+
+    .meal-container {
+        max-width: 740px;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Smaller View (like iPhone) */
+@media (max-width: 750px) {
+
+    #meals-list {
+        height: 100%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .meal-container {
+        padding-top: 70px;
+        max-width: 500px;
+    }
+
+    .meal-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .meal-navbar-container {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .meal-menu {
+        background-color: var(--p1-burger-darkgray);
+        border: solid 3px var(--p1-burger-darkgray);
+        color: var(--white);
+        list-style: none;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .meal-first-menu-link {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .meal-third-menu-link {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+
+    .meal-menu-link {
+        font-size: 22px !important;
+    }
+}
+
+/* Smaller View (like iPhone and smaller) */
+@media (max-width: 650px) {
+
+    .meal-container {
+        padding-top: 30px;
+    }
+}
+
+/* Larger View (like iPad and above) */
+@media (min-width: 650px) {
+
+    #meals-list {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+}
+
+/* ====================================================================
+                        MEAL.EJS STYLES (pictures)
+==================================================================== */
+
+/* BURGER PICTURE STYLES: BURGER_1 - BURGER_5 */
+
+/* The two burger styles below apply to ALL burger meal items */
+.meal-burger-picture-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-burger-picture1 {
+    width: 200px;
+    height: 200px;
+}
+
+/* APPETIZER PICTURE STYLES: APPETIZER_1 - APPETIZERS_4 */
+
+/* APPETIZER_1 */
+.meal-appetizer-picture-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-appetizer-picture1 {
+    margin-top: 14px;
+    width: 295px;
+    height: 240px;
+}
+
+/* APPETIZER_2 */
+.meal-appetizer-picture-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-appetizer-picture2 {
+    margin-top: 14px;
+    width: 300px;
+    height: 240px;
+    border-left: 3px solid var(--p1-burger-darkgray);
+    border-right: 3px solid var(--p1-burger-darkgray);
+}
+
+/* APPETIZER_3 */
+.meal-appetizer-picture-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-appetizer-picture3 {
+    margin-top: 55px;
+    width: 300px;
+    height: 280px;
+    border-left: 3px solid var(--p1-burger-darkgray);
+    border-right: 3px solid var(--p1-burger-darkgray);
+}
+
+/* APPETIZER_4 */
+.meal-appetizer-picture-container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-appetizer-picture4 {
+    margin-top: 55px;
+    width: 300px;
+    height: 280px;
+    border-left: 3px solid var(--p1-burger-darkgray);
+    border-right: 3px solid var(--p1-burger-darkgray);
+}
+
+/* BEVERAGE PICTURE STYLES: BEVERAGE_1 - BEVERAGE_5 */
+
+/* BEVERAGE_1 */
+.meal-beverage-picture-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-beverage-picture1 {
+    margin-top: 14px;
+    width: 295px;
+    height: 240px;
+}
+
+/* BEVERAGE_2 */
+.meal-beverage-picture-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-beverage-picture2 {
+    margin-top: 14px;
+    width: 295px;
+    height: 240px;
+}
+
+/* BEVERAGE_3 */
+.meal-beverage-picture-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-beverage-picture3 {
+    margin-top: 14px;
+    width: 295px;
+    height: 240px;
+}
+
+/* BEVERAGE_4 */
+.meal-beverage-picture-container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-beverage-picture4 {
+    margin-top: 14px;
+    width: 295px;
+    height: 240px;
+}
+
+/* BEVERAGE_5 */
+.meal-beverage-picture-container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+}
+
+.meal-beverage-picture5 {
+    margin-top: 14px;
+    width: 295px;
+    height: 240px;
+}

@@ -1,0 +1,206 @@
+<!--
+    The HTML structure builds out the bill page
+    of the Riverside Burger Bash website. On the  
+    bill page, a table is displayed that summarizes
+    a given customer's order from Riverside Burger
+    Bash. The table contains columns for the server
+    number, the item description, the price of the
+    item ordered, the number of items ordered, and
+    the subtotal resulting from the price of the 
+    given item multiplied by its quantity ordered.
+    The total cost for all items ordered, tax, tips,
+    and total order cost overall are listed at the
+    bottom of the table.
+    ...
+    NOTE: This page uses styles from the rbb-meals
+    page of the Riverside Burger Bash website in
+    addition to its own styles.
+    ...
+    Page: BILL/PAYMENT
+    ...
+    Project: Riverside Burger Bash
+    Author: Andrew Krause
+    Class: CS 202
+    Date: 10/14/2022
+    ...
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title of website -->
+        <title>Riverside Burger Bash</title>
+
+        <!-- Meta Data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS Speadsheet and Icon for Tab Display -->
+        <link href="Exercise5_CSS/rbb-universal.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-header.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-footer.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-meals.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-bill.css" rel="stylesheet">
+        <link rel="shortcut icon" href="Exercise5_Images/home-images/burger-solid.svg" type="image/x-icon">
+
+        <!-- Script Links for Fontawesome -->
+        <script src="https://kit.fontawesome.com/55b918ce29.js" crossorigin="anonymous"></script> 
+
+        <!-- Sans Serif Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Cardo&family=Josefin+Slab&family=Libre+Franklin:wght@200&family=Lora:wght@400;500&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=Raleway:wght@300&family=Rokkitt:wght@300&family=Rubik:wght@300&family=Source+Sans+Pro&family=Unna&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header with responsive navbar -->
+        <header id="navbar">
+            <nav class="meals-nav">
+                <a class="back-home-button meal-visibility-toggle1" href="index.html"><i class="fa-solid fa-burger"></i></a>
+                <h1 class="meal-heading-styles">Sample Bill</h1> 
+            </nav>
+        </header>
+
+        <!-- Main content of home page -->
+        <article id="bill-list">
+            <section class="meal-part">
+                <div class="meal-container">
+                    <div class="meal-row">
+                        <!-- Create a container to change background color of bill area -->
+                        <div class="bill-container">
+
+                            <!-- Include a heading with the server name and dat/time -->
+                            <div class="order-header">
+                                <p>Served By: Andrew Krause</p>
+                                <div>
+                                    <p>Date: 10/23/2022</p>
+                                    <p>Time: 6:30PM</p>
+                                </div>
+                            </div>
+
+                            <!-- Container for table -->
+                            <div class="table-container">
+                                <!-- Main table -->
+                                <!-- NOTE: May end up using JavaScript on this... -->
+                                <table>
+                                    <!-- Table head -->
+                                    <thead>
+                                        <tr>
+                                            <!-- <th></th> -->
+                                            <th style="width: 8%; font-size: 25px;">S. No.</th>
+                                            <th style="width: 40%; font-size: 25px;">Item Description</th>
+                                            <th style="width: 14%; font-size: 25px;">Price</th>
+                                            <th style="width: 14%; font-size: 25px;">Quantity</th>
+                                            <th style="width: 24%; font-size: 25px;" class="money-highlight">Subtotal</th>
+                                        </tr>
+                                    </thead>
+
+                                    <!-- Table body -->
+                                    <tbody>
+                                        <!-- Order of 2 Bacon Bomb burgers -->
+                                        <tr>
+                                            <td>142</td>
+                                            <td>Bacon Bomb</td>
+                                            <td>$13.50</td>
+                                            <td>2</td>
+                                            <td class="money-highlight">$27.00</td>
+                                        </tr>
+                                        <!-- Order of 1 Crispy Fries appetizer -->
+                                        <tr>
+                                            <td>142</td>
+                                            <td>Crispy Fries</td>
+                                            <td>$5.00</td>
+                                            <td>1</td>
+                                            <td class="money-highlight">$5.00</td>
+                                        </tr>
+                                        <!-- Order of 2 Fresh Lemonade beverages -->
+                                        <tr>
+                                            <td>142</td>
+                                            <td>Fresh Lemonade</td>
+                                            <td>$6.00</td>
+                                            <td>2</td>
+                                            <td class="money-highlight">$12.00</td>
+                                        </tr>
+                                        <!-- Order of 1 Mint Milkshake beverages -->
+                                        <tr>
+                                            <td>142</td>
+                                            <td>Mint Milkshake</td>
+                                            <td>$10.00</td>
+                                            <td>1</td>
+                                            <td class="money-highlight">$10.00</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <!-- Table foot -->
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="4" align="right" style="padding-right: 10px; font-size: 25px;">Total</th>
+                                            <td class="money-highlight">$54.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="4" align="right" style="padding-right: 10px; font-size: 25px;">Tax(5.5%)</th>
+                                            <td class="money-highlight">$2.97</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="4" align="right" style="padding-right: 10px; font-size: 25px;">Tips</th>
+                                            <td class="money-highlight">$8.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="4" align="right" style="padding-right: 10px; font-size: 25px;">Customer Pays</th>
+                                            <td class="money-highlight-total">$63.97</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                            <!-- Include a footer with a credit card or cash selector, card number, and end message -->
+                            <div class="order-footer">
+                                <div class="cash-card-buttons">
+                                    <label class="form-control" style="cursor: pointer;">
+                                        <input type="radio" name="radio"/>
+                                        <i class="fa-solid fa-credit-card"></i> Credit Card
+                                    </label>
+                                      
+                                    <label class="form-control" style="cursor: pointer;">
+                                        <input type="radio" name="radio"/>
+                                        <i class="fa-solid fa-money-bill"></i> Cash
+                                    </label>
+                                </div>
+                                <div class="bill-card-number">
+                                    <p>Card number: XXXX-XXXX-XXXX-0621</p>
+                                </div>
+                                <p class="bill-end-message">Thank you for your business. Hope to see you again!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer with name and dynamic year -->
+        <footer id="footer" class="footer-section" data-visible="true">
+            <div class="footer-row">
+                <div>
+                    <p class="footer-hours">
+                        <i class="fa-solid fa-clock"></i> Open Mon - Fri from 10:00AM to 11:00PM
+                    </p>
+                    <p class="footer-hours">
+                        <i class="fa-solid fa-glasses"></i> Copyright © Andrew Krause <script>document.write(new Date().getFullYear())</script>
+                    </p>
+                </div>
+                <address class="address-info">
+                    <p class="footer-address-location">
+                        <i class="fa-solid fa-location-dot"></i> 100 Harborview Plaza #100, La Crosse, WI 54601
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> (608) 782-8213
+                    </p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>

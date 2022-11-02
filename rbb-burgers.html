@@ -1,0 +1,189 @@
+<!--
+    The HTML structure builds out the meals pages
+    of the Riverside Burger Bash website. On the  
+    meals pages, different menu items are listed out
+    in a card format to  display the different meal
+    options of the website. For the different menu
+    categories, there are Burgers, Appetizers, and
+    Beverages. Each card item belonging to a given
+    category includes an index, an image, the price
+    of the name of the item, and the price of the
+    item. 
+    ...
+    Page: BURGERS
+    ...
+    Project: Riverside Burger Bash
+    Author: Andrew Krause
+    Class: CS 202
+    Date: 10/14/2022
+    ...
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title of website -->
+        <title>Riverside Burger Bash</title>
+
+        <!-- Meta Data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS Speadsheet and Icon for Tab Display -->
+        <link href="Exercise5_CSS/rbb-universal.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-header.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-footer.css" rel="stylesheet">
+        <link href="Exercise5_CSS/rbb-meals.css" rel="stylesheet">
+        <link rel="shortcut icon" href="Exercise5_Images/home-images/burger-solid.svg" type="image/x-icon">
+
+        <!-- Script Links for JavaScript and Fontawesome -->
+        <script type="text/javascript" src="Exercise5_JS/rbb-functions.js" defer></script> <!-- async defer -->
+        <script src="https://kit.fontawesome.com/55b918ce29.js" crossorigin="anonymous"></script> 
+
+        <!-- Sans Serif Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Cardo&family=Josefin+Slab&family=Libre+Franklin:wght@200&family=Lora:wght@400;500&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=Raleway:wght@300&family=Rokkitt:wght@300&family=Rubik:wght@300&family=Source+Sans+Pro&family=Unna&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header with responsive navbar -->
+        <header id="navbar">
+            <nav class="meals-nav">
+                <a class="back-home-button meal-visibility-toggle1" href="index.html"><i class="fa-solid fa-burger"></i></a>
+                <h1 class="meal-heading-styles">Menu</h1> <!-- Burgers -->
+            </nav>
+        </header>
+
+        <!-- Main content of home page -->
+        <article id="meals-list">
+            <section class="meal-part">
+                <div class="meal-container">
+
+                    <!-- Meal page menu -->
+                    <div class="meal-navbar-container">
+                        <div class="meal-menu">
+                            <a id="menu-burgers" class="menu-is-active meal-menu-link meal-first-menu-link" href="rbb-burgers.html">Burgers</a>
+                            <a id="menu-appetizers" class="meal-menu-link meal-second-menu-link" href="rbb-appetizers.html">Appetizers</a>
+                            <a id="menu-beverages" class="meal-menu-link meal-third-menu-link" href="rbb-beverages.html">Beverages</a>
+                        </div>
+                    </div>
+
+                    <!-- Include the row for the meal row -->
+                    <div class="meal-row">
+                        <!-- Include a meal card - BURGER_1 -->
+                        <div class="meal-card">
+                            <!-- Include index of menu item -->
+                            <div class="meal-index-container">
+                                <p class="meal-index"></p>
+                            </div>
+                            <!-- Include an image for the meal item -->
+                            <div class="meal-burger-picture-container1">
+                                <img class="meal-burger-picture1" src="Exercise5_Images/burgers-images/burger-1.png" alt="Burger-Bacon-Img">
+                            </div>
+                            <!-- Include the name and price for the meal item -->
+                            <div class="meal-nameprice-container">
+                                <span class="meal-name">Bacon Bomb</span>
+                                <span class="meal-price">$10.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Include a meal card - BURGER_2 -->
+                        <div class="meal-card">
+                            <!-- Include index of menu item -->
+                            <div class="meal-index-container">
+                                <p class="meal-index"></p>
+                            </div>
+                            <!-- Include an image for the meal item -->
+                            <div class="meal-burger-picture-container1">
+                                <img class="meal-burger-picture1" src="Exercise5_Images/burgers-images/burger-2.png" alt="Burger-Deluxe-Img">
+                            </div>
+                            <!-- Include the name and price for the meal item -->
+                            <div class="meal-nameprice-container">
+                                <span class="meal-name">Bash Deluxe</span>
+                                <span class="meal-price">$12.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Include a meal card - BURGER_3 -->
+                        <div class="meal-card">
+                            <!-- Include index of menu item -->
+                            <div class="meal-index-container">
+                                <p class="meal-index"></p>
+                            </div>
+                            <!-- Include an image for the meal item -->
+                            <div class="meal-burger-picture-container1">
+                                <img class="meal-burger-picture1" src="Exercise5_Images/burgers-images/burger-3.png" alt="Burger-River-Img">
+                            </div>
+                            <!-- Include the name and price for the meal item -->
+                            <div class="meal-nameprice-container">
+                                <span class="meal-name">River Raft</span>
+                                <span class="meal-price">$13.50</span>
+                            </div>
+                        </div>
+
+                        <!-- Include a meal card - BURGER_4 -->
+                        <div class="meal-card">
+                            <!-- Include index of menu item -->
+                            <div class="meal-index-container">
+                                <p class="meal-index"></p>
+                            </div>
+                            <!-- Include an image for the meal item -->
+                            <div class="meal-burger-picture-container1">
+                                <img class="meal-burger-picture1" src="Exercise5_Images/burgers-images/burger-4.png" alt="Burger-Double-Img">
+                            </div>
+                            <!-- Include the name and price for the meal item -->
+                            <div class="meal-nameprice-container">
+                                <span class="meal-name">Double Deal</span>
+                                <span class="meal-price">$15.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Include a meal card - BURGER_5 -->
+                        <div class="meal-card">
+                            <!-- Include index of menu item -->
+                            <div class="meal-index-container">
+                                <p class="meal-index"></p>
+                            </div>
+                            <!-- Include an image for the meal item -->
+                            <div class="meal-burger-picture-container1">
+                                <img class="meal-burger-picture1" src="Exercise5_Images/burgers-images/burger-5.png" alt="Burger-Kids-Img">
+                            </div>
+                            <!-- Include the name and price for the meal item -->
+                            <div class="meal-nameprice-container">
+                                <span class="meal-name">Kids Burger</span>
+                                <span class="meal-price">$11.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer with name and dynamic year -->
+        <footer id="footer" class="footer-section" data-visible="true">
+            <div class="footer-row">
+                <div>
+                    <p class="footer-hours">
+                        <i class="fa-solid fa-clock"></i> Open Mon - Fri from 10:00AM to 11:00PM
+                    </p>
+                    <p class="footer-hours">
+                        <i class="fa-solid fa-glasses"></i> Copyright © Andrew Krause <script>document.write(new Date().getFullYear())</script>
+                    </p>
+                </div>
+                <address class="address-info">
+                    <p class="footer-address-location">
+                        <i class="fa-solid fa-location-dot"></i> 100 Harborview Plaza #100, La Crosse, WI 54601
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> (608) 782-8213
+                    </p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
