@@ -89,21 +89,29 @@ a .fa-burger {
 }
 
 .meal-menu {
-    background-color: var(--p1-burger-darkgray);
-    border: solid 3px var(--p1-burger-darkgray);
-    color: var(--white);
     list-style: none;
-    border-radius: 30px;
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .meal-first-menu-link {
+    background-color: var(--p1-burger-darkgray);
+    border: solid 3px var(--p1-burger-darkgray);
+    color: var(--white);
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
+.meal-second-menu-link {
+    background-color: var(--p1-burger-darkgray);
+    border: solid 3px var(--p1-burger-darkgray);
+    color: var(--white);
+}
+
 .meal-third-menu-link {
+    background-color: var(--p1-burger-darkgray);
+    border: solid 3px var(--p1-burger-darkgray);
+    color: var(--white);
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -284,13 +292,10 @@ section {
     }
 
     .meal-menu {
-        background-color: var(--p1-burger-darkgray);
-        border: solid 3px var(--p1-burger-darkgray);
-        color: var(--white);
         list-style: none;
         border-radius: 20px;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
     }
     
     .meal-first-menu-link {
