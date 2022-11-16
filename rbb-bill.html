@@ -20,8 +20,7 @@
     ...
     Project: Riverside Burger Bash
     Author: Andrew Krause
-    Class: CS 202
-    Date: 10/14/2022
+    Date: 11/16/2022
     ...
 -->
 <!DOCTYPE html>
@@ -36,14 +35,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- CSS Speadsheet and Icon for Tab Display -->
-        <link href="Exercise5_CSS/rbb-universal.css" rel="stylesheet">
-        <link href="Exercise5_CSS/rbb-header.css" rel="stylesheet">
-        <link href="Exercise5_CSS/rbb-footer.css" rel="stylesheet">
-        <link href="Exercise5_CSS/rbb-meals.css" rel="stylesheet">
-        <link href="Exercise5_CSS/rbb-bill.css" rel="stylesheet">
-        <link rel="shortcut icon" href="Exercise5_Images/home-images/burger-solid.svg" type="image/x-icon">
+        <link href="Rbb_CSS/rbb-universal.css" rel="stylesheet">
+        <link href="Rbb_CSS/rbb-header.css" rel="stylesheet">
+        <link href="Rbb_CSS/rbb-footer.css" rel="stylesheet">
+        <link href="Rbb_CSS/rbb-meals.css" rel="stylesheet">
+        <link href="Rbb_CSS/rbb-bill.css" rel="stylesheet">
+        <link rel="shortcut icon" href="Rbb_Images/home-images/burger-solid.svg" type="image/x-icon">
 
-        <!-- Script Links for Fontawesome -->
+        <!-- Script Links for JavaScript Fontawesome -->
+        <script type="text/javascript" src="Rbb_JS/rbb-bill.js" defer></script> <!-- async defer -->
         <script src="https://kit.fontawesome.com/55b918ce29.js" crossorigin="anonymous"></script> 
 
         <!-- Sans Serif Fonts -->
@@ -61,7 +61,7 @@
         <header id="navbar">
             <nav class="meals-nav">
                 <a class="back-home-button meal-visibility-toggle1" href="index.html"><i class="fa-solid fa-burger"></i></a>
-                <h1 class="meal-heading-styles">Sample Bill</h1> 
+                <h1 class="meal-heading-styles">Customer Bill</h1> 
             </nav>
         </header>
 
@@ -75,24 +75,80 @@
 
                             <!-- Include a heading with the server name and dat/time -->
                             <div class="order-header">
-                                <p>Served By: Andrew Krause</p>
-                                <div>
-                                    <p>Date: 10/23/2022</p>
+                                <p class="order-server">Served By: Andrew Krause</p>
+                                <p class="order-restaurant-name">Riverside Burger Bash</p>
+                                <div class="order-date-time">
+                                    <p>Date: 11/16/2022</p>
                                     <p>Time: 6:30PM</p>
                                 </div>
+                            </div>
+
+                            <!-- 
+                                Include text fields in a row: Name, Price, and Quantity.
+                                The user can fill in these fields and click the "Add Item"
+                                button to add the given item order to the table.
+                            -->
+                            <div class="order-text-fields order-first-text-field">
+                                <form class="order-text-fields-form" action="" onsubmit="addItem()">
+                                    <div class="order-entry-item bill-label-input">
+                                        <label id="nameLabel" for="nameField">Item</label>
+                                        <input id="nameField" placeholder="Enter Item" type="text" required/>
+                                    </div>
+                                    <div class="order-entry-item bill-label-input">
+                                        <label id="priceLabel" for="priceField">Price</label>
+                                        <input id="priceField" placeholder="Enter Price" type="number" min="0" step="0.01" required/>
+                                    </div>
+                                    <div class="order-entry-item bill-label-input">
+                                        <label id="quantityLabel" for="quantityField">Quantity</label>
+                                        <input id="quantityField" placeholder="Enter Quantity" type="number" min="0" required/>
+                                    </div>
+                                    <div class="order-entry-item order-entry-item-last">
+                                        <input id="submitAddRow" class="order-button" type="submit" value="Add Item"/>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- 
+                                Include a row of radio buttons for the tips the user
+                                can select from. The user can then click the "Calculate
+                                Total" button to compute the total bill. The total bill
+                                includes the sum of all the orders, the taxes, and the
+                                tips.
+                            -->
+                            <div class="order-tip-fields">
+                                <form class="order-tip-fields-form" action="" onsubmit="calculateTotals()">
+                                    <div class="order-tip-item order-tip-item-text">
+                                        <p class="order-tip-item-message">Please select a tip:</p>
+                                    </div>
+                                    <div class="order-tip-item order-tip-item-radios">
+                                        <label class="bill-label-input" style="cursor: pointer;">
+                                            <input id="tenTip" type="radio" name="radio"/>
+                                            10% Tip
+                                        </label>
+                                        <label class="bill-label-input" style="cursor: pointer;">
+                                            <input id="fifteenTip" type="radio" name="radio"/>
+                                            15% Tip
+                                        </label>
+                                        <label class="bill-label-input" style="cursor: pointer;">
+                                            <input id="twentyTip" type="radio" name="radio"/>
+                                            20% Tip
+                                        </label>
+                                    </div>
+                                    <div class="order-tip-item">
+                                        <input id="calculateCosts" class="order-button" type="submit" value="Calculate Total"/>
+                                    </div>
+                                </form>
                             </div>
 
                             <!-- Container for table -->
                             <div class="table-container">
                                 <!-- Main table -->
-                                <!-- NOTE: May end up using JavaScript on this... -->
-                                <table>
+                                <table id="orderTable">
                                     <!-- Table head -->
                                     <thead>
                                         <tr>
-                                            <!-- <th></th> -->
                                             <th style="width: 8%; font-size: 25px;">S. No.</th>
-                                            <th style="width: 40%; font-size: 25px;">Item Description</th>
+                                            <th style="width: 40%; font-size: 25px;">Item Name</th>
                                             <th style="width: 14%; font-size: 25px;">Price</th>
                                             <th style="width: 14%; font-size: 25px;">Quantity</th>
                                             <th style="width: 24%; font-size: 25px;" class="money-highlight">Subtotal</th>
@@ -101,79 +157,60 @@
 
                                     <!-- Table body -->
                                     <tbody>
-                                        <!-- Order of 2 Bacon Bomb burgers -->
-                                        <tr>
-                                            <td>142</td>
-                                            <td>Bacon Bomb</td>
-                                            <td>$13.50</td>
-                                            <td>2</td>
-                                            <td class="money-highlight">$27.00</td>
-                                        </tr>
-                                        <!-- Order of 1 Crispy Fries appetizer -->
-                                        <tr>
-                                            <td>142</td>
-                                            <td>Crispy Fries</td>
-                                            <td>$5.00</td>
-                                            <td>1</td>
-                                            <td class="money-highlight">$5.00</td>
-                                        </tr>
-                                        <!-- Order of 2 Fresh Lemonade beverages -->
-                                        <tr>
-                                            <td>142</td>
-                                            <td>Fresh Lemonade</td>
-                                            <td>$6.00</td>
-                                            <td>2</td>
-                                            <td class="money-highlight">$12.00</td>
-                                        </tr>
-                                        <!-- Order of 1 Mint Milkshake beverages -->
-                                        <tr>
-                                            <td>142</td>
-                                            <td>Mint Milkshake</td>
-                                            <td>$10.00</td>
-                                            <td>1</td>
-                                            <td class="money-highlight">$10.00</td>
-                                        </tr>
+                                        <!-- Leave the rest empty. Will be populated with JavaScript -->
                                     </tbody>
 
-                                    <!-- Table foot -->
+                                    <!-- Table foot. Certain contents calculated with JavaScript -->
                                     <tfoot>
                                         <tr>
                                             <th colspan="4" align="right" style="padding-right: 10px; font-size: 25px;">Total</th>
-                                            <td class="money-highlight">$54.00</td>
+                                            <td id="overallTotal" align="right" style="padding-right: 10px;" class="money-highlight">$0.00</td>
                                         </tr>
                                         <tr>
                                             <th colspan="4" align="right" style="padding-right: 10px; font-size: 25px;">Tax(5.5%)</th>
-                                            <td class="money-highlight">$2.97</td>
+                                            <td id="overallTax" align="right" style="padding-right: 10px;" class="money-highlight">$0.00</td>
                                         </tr>
                                         <tr>
                                             <th colspan="4" align="right" style="padding-right: 10px; font-size: 25px;">Tips</th>
-                                            <td class="money-highlight">$8.00</td>
+                                            <td id="overallTip" align="right" style="padding-right: 10px;" class="money-highlight">$0.00</td>
                                         </tr>
                                         <tr>
                                             <th colspan="4" align="right" style="padding-right: 10px; font-size: 25px;">Customer Pays</th>
-                                            <td class="money-highlight-total">$63.97</td>
+                                            <td id="customerPaysTotal" align="right" style="padding-right: 10px;" class="money-highlight-total">$0.00</td>
                                         </tr>
                                     </tfoot>
                                 </table>
                             </div>
 
-                            <!-- Include a footer with a credit card or cash selector, card number, and end message -->
-                            <div class="order-footer">
-                                <div class="cash-card-buttons">
-                                    <label class="form-control" style="cursor: pointer;">
-                                        <input type="radio" name="radio"/>
-                                        <i class="fa-solid fa-credit-card"></i> Credit Card
-                                    </label>
-                                      
-                                    <label class="form-control" style="cursor: pointer;">
-                                        <input type="radio" name="radio"/>
-                                        <i class="fa-solid fa-money-bill"></i> Cash
-                                    </label>
-                                </div>
-                                <div class="bill-card-number">
-                                    <p>Card number: XXXX-XXXX-XXXX-0621</p>
-                                </div>
-                                <p class="bill-end-message">Thank you for your business. Hope to see you again!</p>
+                            <!-- 
+                                Include the last set of input for the user to interact
+                                with. The container holds two different payment options.
+                                The container also holds a "Pay Bill" button that will
+                                "submit" the user/customer's final payment to Riverside
+                                Burger Bash. No database interaction has been implemented 
+                                at this point in time.
+                            -->
+                            <div class="order-final-footer">
+                                <form class="order-final-footer-form" action="" onsubmit="payTheBill()">
+                                    <div class="order-final-item order-final-item-text">
+                                        <p class="order-final-item-message">Select payment type:</p>
+                                    </div>
+                                    <div class="order-final-item order-final-item-radios">
+                                        <label class="bill-label-input" style="cursor: pointer;">
+                                            <input id="creditOption" type="radio" name="radio" value="CREDIT-selected"/>
+                                            <i class="fa-solid fa-credit-card"></i> Credit
+                                        </label>
+                                        <label class="bill-label-input" style="cursor: pointer;">
+                                            <input id="cashOption" type="radio" name="radio" value="CASH-selected"/>
+                                            <i class="fa-solid fa-money-bill"></i> Cash
+                                        </label>
+                                    </div>
+                                    <div class="order-final-item">
+                                        <input id="payFinalBill" class="order-button" type="submit" value="Pay Bill"/>
+                                    </div>
+                                </form>
+                                <p id="paymentType" class="bill-payment-type">Payment process state: Incomplete</p>
+                                <p id="finalPaymentMessage" class="bill-end-message">Add your items, calculate the total, and pay your bill.</p>
                             </div>
                         </div>
                     </div>

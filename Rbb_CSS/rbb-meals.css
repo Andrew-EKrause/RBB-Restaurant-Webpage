@@ -16,8 +16,7 @@
  *
  * Project: Riverside Burger Bash
  * Author: Andrew Krause
- * Class: CS 202
- * Date: 10/14/2022
+ * Date: 11/16/2022
  *
  */
 
@@ -98,8 +97,8 @@ a .fa-burger {
     background-color: var(--p1-burger-darkgray);
     border: solid 3px var(--p1-burger-darkgray);
     color: var(--white);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .meal-second-menu-link {
@@ -112,8 +111,8 @@ a .fa-burger {
     background-color: var(--p1-burger-darkgray);
     border: solid 3px var(--p1-burger-darkgray);
     color: var(--white);
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .meal-menu-link {

@@ -12,8 +12,7 @@
  *
  * Project: Riverside Burger Bash
  * Author: Andrew Krause
- * Class: CS 202
- * Date: 10/14/2022
+ * Date: 11/16/2022
  *
  */
 
@@ -28,7 +27,7 @@
 
 .home-part .home-background {
     padding-top: 0px;
-    background-image: url('../Exercise5_Images/home-images/home.png');
+    background-image: url('../Rbb_Images/home-images/home.png');
     filter: brightness(40%);
     height: 400px;
 }
