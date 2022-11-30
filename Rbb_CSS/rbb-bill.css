@@ -20,7 +20,7 @@
  */
 
 /* ====================================================================
-                        BILL.EJS STYLES (all-sizes)
+                        BILL STYLES (all-sizes)
 ==================================================================== */
 /* TRY MAKING THE TABLE RESPONSIVE LATER ON... */
 
@@ -297,7 +297,7 @@ td:first-child, th:first-child {
 }
 
 /* ====================================================================
-            BILL.EJS STYLES (mobile, larger, desktop, maximum)
+            BILL STYLES (mobile, larger, desktop, maximum)
 ==================================================================== */
 
 /* Smaller View (like iPhone) */
