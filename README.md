@@ -23,7 +23,7 @@ The webpage designed in this project is for a fake restaurant called 'Riverside 
 
 ## **NOTE:**
 
-The images used in this project were not created or taken by me. I created the webpage as part of an assignment for my web design class at the [University of Wisconsin - La Crosse](https://www.uwlax.edu/). Therefore, I used images I found online for the Riverside Burger Bash webpage within an academic context. I have cited the image sources that I used. The image attributions are included in a separate document within this repository labled: "RBB-Image-Attributions". YOU STILL NEED TO ADD THIS DOCUMENT!!!!!!
+The images used in this project were not created by me. I created the webpage as part of an assignment for my web design class at the [University of Wisconsin - La Crosse](https://www.uwlax.edu/). Therefore, I used images I found online for the Riverside Burger Bash webpage within an academic context. I have cited the image sources that I used. The image attributions are included in a separate document within this repository labled: "RBB-Image-Attributions".
 <p>&nbsp;</p>
 
 **_@Author: Andrew Krause_** <br/>
