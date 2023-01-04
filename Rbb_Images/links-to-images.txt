@@ -2,29 +2,36 @@
 Home Page Images
 ============================
 
-1. (DONE) https://www.sbe.com/sites/default/files/2019-10/umami-burger-location-broadway-new-2.jpg OR
+1. ("Home Image") https://www.sbe.com/sites/default/files/2019-10/umami-burger-location-broadway-new-2.jpg
 
 ============================
 Meal/Burger Images
 ============================
-3. (DONE) https://dairyqueen-prod.dotcdn.io/dA/768c2de055/fileAsset/FlamethrowerCDADuo.png
-4. (DONE) https://www.dairyqueen.com/dA/991ecdf411/DQ-Stackburger-Loaded-A1-Double-US.png
-6. (DONE) https://www.dairyqueen.com/dA/8b2418ed10/third-pound-double-cheeseburger.png
-7. (DONE) https://theburgerden.com/wp-content/uploads/2021/06/Flamin_5_Pepper_Burger_Clipped_Sept21Core.CC.R3800x770.png
-8. (DONE) https://theburgerden.com/wp-content/uploads/2021/09/Americas_Diner_Burger_Clipped_Sept21Core.CC.R3.png
-// NEED TO PROPERLY ATTRIBUTE THE LAST ONE...
+
+1. ("Bacon Bomb") https://theburgerden.com/wp-content/uploads/2021/06/Flamin_5_Pepper_Burger_Clipped_Sept21Core.CC.R3800x770.png
+2. ("Bash Deluxe") https://www.dairyqueen.com/dA/991ecdf411/DQ-Stackburger-Loaded-A1-Double-US.png
+3. ("River Raft") https://theburgerden.com/wp-content/uploads/2021/09/Americas_Diner_Burger_Clipped_Sept21Core.CC.R3.png
+4. ("Double Deal") https://dairyqueen-prod.dotcdn.io/dA/768c2de055/fileAsset/FlamethrowerCDADuo.png
+5. ("Kids Burger") https://www.dairyqueen.com/dA/8b2418ed10/third-pound-double-cheeseburger.png
 
 ============================
 Appetizers Images
 ============================
 
-COMPLETED.
+1. ("Crispy Fries") https://www.google.com/search?q=images+of+french+fries+the+cozy+cook&sxsrf=ALiCzsbkxBT7dZYkCMdwXzzouXqQY1SKwA:1672793621217&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiZwMzs2az8AhVclWoFHf-dBs4Q_AUoAXoECAEQAw&biw=1568&bih=871&dpr=2#imgrc=PLBdbKo8ri9kzM
+2. ("Jalapeno Poppers") https://www.google.com/search?q=images+of+jalapeno+poppers+myrecipes&sxsrf=ALiCzsaj5iVdD3UyUAGB2tskDW-ZQKZixg:1672795504432&source=lnms&tbm=isch&sa=X&ved=2ahUKEwik9sru4Kz8AhVAlGoFHW48C9IQ_AUoAXoECAEQAw&biw=1568&bih=871&dpr=2#imgrc=gXgvvJcExAn8yM
+3. ("Creamy Coleslaw") https://www.google.com/search?q=images+of+eatingWell+coleslae&oq=images+of+eatingWell+coleslae&aqs=chrome..69i57j33i10i160l3.4473j0j4&sourceid=chrome&ie=UTF-8#imgrc=jRec6XvX06e4jM
+4. ("Tossed Salad") https://www.google.com/search?q=images+of+food+salad+9+good+reasons+to+eat+salad+every+day&tbm=isch&ved=2ahUKEwjxlZGJwq78AhV8Fd4AHethBE8Q2-cCegQIABAA&oq=images+of+food+salad+9+good+reasons+to+eat+salad+every+day&gs_lcp=CgNpbWcQA1CxA1jpLWCOL2gAcAB4AYABuQGIAbUWkgEEMzguMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=lsG1Y_HyBPyq-LYP68OR-AQ&bih=871&biw=1525#imgrc=Lo4uyws0QWJLEM
 
 ============================
 Beverages/Drinks Images
 ============================
 
-COMPLETED.
+1. ("Mint Milkshake") https://www.google.com/search?q=images+of+mint+milkshake+very+best+baking&sxsrf=AJOqlzVrFDpR-J-6rwCsNShI5gxpYZwjqQ:1672856272602&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiT3Y2fw678AhWXBzQIHbcoDpAQ_AUoAXoECAEQAw&biw=1525&bih=871&dpr=2#imgrc=-79ltJvxEuIWGM
+2. ("Margarita") https://www.google.com/search?q=images+of+how+to+make+a+margarita+baking+a+moment&sxsrf=ALiCzsZnib8vDTe5HSEpA0qB7GaPrL9C6g%3A1672856597661&ei=FcS1Y_WCKOKvqtsPye224AU&ved=0ahUKEwi14Y26xK78AhXil2oFHcm2DVwQ4dUDCBA&uact=5&oq=images+of+how+to+make+a+margarita+baking+a+moment&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAEyBQghEKABOgoIABBHENYEELADOggIIRAWEB4QHToFCCEQqwJKBAhBGABKBAhGGABQ7wJYng9g4w9oAXABeACAAYYBiAG9DJIBBDQuMTGYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp#imgrc=Lt2xfxIneHv0_M
+3. ("Root Beer Float") https://www.google.com/search?q=images+of+malted+root+beer+float&sxsrf=AJOqlzVkmsyPF0-iYHzMo-7Fqbvib4kiNw%3A1672856924168&ei=XMW1Y5n1CbiF0PEPrd-o8AY&ved=0ahUKEwiZk-bVxa78AhW4AjQIHa0vCm4Q4dUDCBA&uact=5&oq=images+of+malted+root+beer+float&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICCEQwwQQoAE6CggAEEcQ1gQQsAM6BQgAEKIEOgcIABAeEKIESgQIQRgASgQIRhgAUOwCWKMqYJgraANwAXgAgAF5iAGdC5IBBDEyLjSYAQCgAQHIAQfAAQE&sclient=gws-wiz-serp#imgrc=f8kiSxLcQloMBM
+4. ("Berry Daiquiri") https://www.google.com/search?q=images+of+miss+in+the+kitdchen+daiquiri&oq=images+of+miss+in+the+kitdchen+daiquiri&aqs=chrome..69i57j33i10i160l2.11700j0j4&sourceid=chrome&ie=UTF-8#imgrc=KUhRIF-tz-HpJM
+5. ("Fresh Lemonade") https://www.google.com/search?q=images+of+homemade+lemonade+recipe+times+food&sxsrf=ALiCzsbf-0FVoUJ4iqPfZYy2bL9dE9PhwA%3A1672857519512&ei=r8e1Y6vvHuymqtsPubWFuA4&ved=0ahUKEwjrgtfxx678AhVsk2oFHblaAecQ4dUDCBA&uact=5&oq=images+of+homemade+lemonade+recipe+times+food&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBwgAEB4QogQyBQgAEKIEOgoIABBHENYEELADOgoIIRDDBBAKEKABSgQIQRgASgQIRhgAUFRYoAZgjgdoAXABeACAAYABiAGlBZIBAzQuM5gBAKABAcgBCMABAQ&sclient=gws-wiz-serp#imgrc=1_JCGk129AwtkM
 
 <<============================>>
 NOTES:
